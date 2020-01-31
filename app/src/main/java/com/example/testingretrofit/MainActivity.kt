@@ -31,7 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         val test = retrofitService.getTests()
 
-        
+        println(test)
+
+
 
     }
 }

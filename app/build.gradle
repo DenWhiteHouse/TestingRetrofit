@@ -36,4 +36,7 @@ dependencies {
     //Rertrofit
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.google.okhttp:okhttp:20120626'
+
+
 }
