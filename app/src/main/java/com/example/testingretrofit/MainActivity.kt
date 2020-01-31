@@ -3,6 +3,7 @@ package com.example.testingretrofit
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.GsonBuilder
+import network.RetrofitService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -25,6 +26,12 @@ class MainActivity : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
 
+
+         val retrofitService = retrofit.create(RetrofitService::class.java)
+
+        val test = retrofitService.getTests()
+
+        
 
     }
 }
